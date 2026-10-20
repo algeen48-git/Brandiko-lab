@@ -1,0 +1,136 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+  <defs>
+    <linearGradient id="upperShade" x1="0" y1="0" x2="0.2" y2="1">
+    <stop id="upper-highlight" offset="0%" stop-color="#FFFFFF"/>
+    <stop id="upper-base" offset="70%" stop-color="#F8F8F8"/>
+    <stop id="upper-shadow" offset="100%" stop-color="#E8E8E8"/>
+    </linearGradient>
+    <linearGradient id="soleShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D5D7D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main upper -->
+  <path id="shoe-upper"
+    fill="url(#upperShade)"
+    stroke="#C8CACE"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    d="M48 174
+       L67 119
+       Q70 110 78 117
+       L112 146
+       Q137 165 174 162
+       L222 155
+       L235 119
+       Q239 106 250 115
+       L278 140
+       L366 163
+       Q405 174 435 197
+       Q453 211 464 225
+       Q471 235 457 239
+       L76 239
+       Q51 238 48 218 Z"/>
+
+  <!-- Heel overlay -->
+  <path id="heel-panel"
+    fill="#F1F2F3"
+    stroke="#D2D4D7"
+    stroke-width="1.2"
+    d="M76 120
+       Q83 121 91 132
+       L112 149
+       Q104 169 104 190
+       L52 190
+       L54 170 Z"/>
+
+  <!-- Heel seam -->
+  <path d="M105 151 Q117 174 109 219"
+    fill="none" stroke="#D4D6D8" stroke-width="1.2"/>
+
+  <!-- Tongue -->
+  <path id="shoe-tongue"
+    fill="#FAFAFA"
+    stroke="#D0D2D5"
+    stroke-width="1.2"
+    d="M225 159
+       L237 121
+       Q241 111 249 118
+       L280 144
+       L268 170 Z"/>
+
+  <!-- Eyelet strip -->
+  <path d="M251 137 Q302 163 354 180"
+    fill="none" stroke="#E0E1E3" stroke-width="10"
+    stroke-linecap="round"/>
+
+  <!-- Lace holes -->
+  <g fill="#AEB2B6">
+    <circle cx="260" cy="140" r="2.3"/>
+    <circle cx="277" cy="148" r="2.3"/>
+    <circle cx="294" cy="155" r="2.3"/>
+    <circle cx="311" cy="162" r="2.3"/>
+    <circle cx="328" cy="168" r="2.3"/>
+    <circle cx="345" cy="175" r="2.3"/>
+  </g>
+
+  <!-- Laces -->
+  <g id="shoe-laces"
+    fill="none" stroke="#FFFFFF"
+    stroke-width="4.5" stroke-linecap="round">
+    <path d="M258 132 L279 153"/>
+    <path d="M275 140 L296 160"/>
+    <path d="M292 147 L313 167"/>
+    <path d="M309 154 L330 174"/>
+    <path d="M326 161 L347 181"/>
+    <path d="M343 168 L364 187"/>
+  </g>
+
+  <!-- Upper panel seams -->
+  <g id="shoe-details"
+    fill="none" stroke="#D4D6D8"
+    stroke-width="1.2" stroke-linecap="round">
+    <path d="M113 149 Q139 173 177 170"/>
+    <path d="M177 170 Q195 166 218 162"/>
+    <path d="M269 171 Q318 181 367 197"/>
+    <path d="M367 197 Q398 205 420 220"/>
+  </g>
+
+  <!-- Outsole -->
+  <path id="shoe-sole"
+    fill="url(#soleShade)"
+    stroke="#BFC2C5"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    d="M49 215
+       Q75 223 111 222
+       L441 222
+       Q459 221 465 230
+       L463 239
+       Q460 247 445 248
+       L77 248
+       Q53 247 49 235 Z"/>
+
+  <!-- Sole edge -->
+  <path d="M56 232 Q112 237 180 236 L454 236"
+    fill="none" stroke="#FFFFFF"
+    stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Sole stitching -->
+  <path id="sole-stitching"
+    d="M76 229 L441 229"
+    fill="none" stroke="#C7C9CC"
+    stroke-width="1"
+    stroke-dasharray="3 3"/>
+
+  <!-- Front toe detail -->
+  <path d="M402 183 Q421 192 438 207"
+    fill="none" stroke="#E1E2E4" stroke-width="1.2"/>
+
+  <!-- Heel logo -->
+  <g id="shoe-logo" fill="#C5C7CA">
+    <path d="M68 151 l7 -2 l-2 6 l-7 2 Z"/>
+  </g>
+</svg>

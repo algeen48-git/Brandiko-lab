@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+
+                    <div class="logo">
+                        BRANDIKO LAB
+                    </div>
+
+                    <nav class="navbar">
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="sneaker-lab.html">Sneaker Lab</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+
+                        <div class="mobile-actions">
+
+                            <a href="shop.html">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Search</span>
+                            </a>
+
+                            <a href="wishlist.html">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Wishlist</span>
+                            </a>
+
+                            <a href="user.html">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Account</span>
+                            </a>
+
+                            <a href="shop.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Cart</span>
+                            </a>
+
+                        </div>
+
+                    </nav>
+
+                    <div class="icons">
+
+                        <a href="shop.html">    
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="wishlist.html">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+
+                        </a>
+
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                        <i class="fa-solid fa-bars menu-toggle"></i>
+
+                    </div>
+
+        </header>
+
+        <section class="shop-categories">
+                <h1>Shop</h1>
+                <p>Find your style. Make it yours.</p>
+            <div class="shop-button">
+                <button class="active">All</button>
+                <button>Sneakers</button>
+                <button>T-Shirts</button>
+                <button>Pants</button>
+                <button>Jackets</button>
+                <button>Accessories</button>
+            </div>
+        </section>
+    
+                    <!-- start shop tools -->
+        <section class="shop-tools">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search products...">
+            </div>
+
+            <div class="sort-box">
+                <label for="sort">Sort by:</label>
+
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="newest">Newest</option>
+                    <option value="best-selling">Best Selling</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+
+        </section>
+                    <!-- end shop tools -->
+            
+                    <!-- start products -->
+        <section class="products-section">
+
+            <div class="products-header">
+                <h2>All Products</h2>
+                <span>12 Products</span>
+            </div>
+
+            <div class="products-grid">
+
+
+            </div>
+
+        </section>
+                <!-- end products -->
+
+          <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <h2>BRANDIKO LAB</h2>
+                    <p>Your style. Your way.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Shop</h3>
+                        <a href="shop.html">Sneakers</a>
+                        <a href="shop.html">T-Shirts</a>
+                        <a href="shop.html">Pants</a>
+                        <a href="shop.html">Jackets</a>
+                        <a href="shop.html">Accessories</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="sneaker-lab.html">Sneaker Lab</a>
+                        <a href="community.html">Community</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+
+                        <div class="social-icons">
+                            <a href="https://instagram.com."><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://facebook.com."><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com."><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Brandiko Lab. All rights reserved.</p>
+
+                <div>
+                    <a href="https://policies.google.com/privacy?hl=en-US&client_theme=dark">Privacy Policy</a>
+                    <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms & Conditions</a>
+                </div>
+            </div>
+
+        </footer>
+
+       
+        <script src="js/cart.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/active-nav.js"></script>
+        <script src="js/products-api.js"></script>
+        <script src="js/shop.js"></script>
+
+            
+</body>
+</html>

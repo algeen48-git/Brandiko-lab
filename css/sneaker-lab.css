@@ -1,0 +1,355 @@
+                    /* start sneaker lab */
+
+.sneaker-lab {
+    padding: 40px 30px;
+    margin: 20px;
+}
+
+/* page header */
+
+.sneaker-lab-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sneaker-lab-header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.sneaker-lab-header p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+
+/* lab container */
+
+.lab-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* sneaker preview */
+
+.sneaker-preview {
+    background-color: var(--color);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.preview-header span {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.preview-header i {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.sneaker-image {
+    height: 430px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.sneaker-image img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.sneaker-preview:hover .sneaker-image img {
+    transform: scale(1.04);
+}
+
+
+/* preview info */
+
+.preview-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.preview-info span:first-child {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.preview-info h2 {
+    margin-top: 5px;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.design-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background-color: rgba(37, 99, 235, 0.1);
+
+    color: var(--accent-color);
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.design-status i {
+    font-size: 7px;
+}
+
+
+/* customization panel */
+
+.customization-panel {
+    background-color: var(--color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.customization-header {
+    margin-bottom: 30px;
+}
+
+.customization-header h2 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.customization-header p {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+
+/* custom options */
+
+.custom-option {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-option h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 13px;
+}
+
+
+/* option buttons */
+
+.option-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 9px 16px;
+
+    border: 2px solid #e5e7eb;
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.option-btn.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--color);
+}
+
+
+/* color options */
+
+.color-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.color-swatch {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+
+.color-swatch.active {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--color);
+    outline: 2px solid var(--accent-color);
+}
+
+.color-swatch.black {
+    background-color: #0a0a0a;
+}
+
+.color-swatch.white {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+}
+
+.color-swatch.blue {
+    background-color: #2563eb;
+}
+
+.color-swatch.red {
+    background-color: #ef4444;
+}
+
+.color-swatch.gray {
+    background-color: #959dac;
+}
+
+
+/* price */
+
+.design-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.design-price span {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.design-price strong {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+
+/* actions */
+
+.design-actions {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 12px;
+}
+
+.design-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.save-design {
+    border: 2px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.save-design:hover {
+    background-color: var(--accent-color);
+    color: var(--color);
+    transform: translateY(-2px);
+}
+
+.add-design-cart {
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--color);
+}
+
+.add-design-cart:hover {
+    background-color: var(--secondary-accent-color);
+    transform: translateY(-2px);
+}
+
+                    /* end sneaker lab */
+
+                    
+/* Experimental sneaker color overlay */
+.sneaker-image {
+    position: relative;
+    isolation: isolate;
+}
+
+.sneaker-image img {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+#sneaker-preview-image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+}

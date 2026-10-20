@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandiko</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sneaker-lab.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            BRANDIKO LAB
+        </div>
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sneaker-lab.html">Sneaker Lab</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+
+            <div class="mobile-actions">
+
+                <a href="shop.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </a>
+
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="user.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </a>
+
+                <a href="shop.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="icons">
+
+            <a href="shop.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="user.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <i class="fa-solid fa-bars menu-toggle"></i>
+
+        </div>
+
+    </header>
+
+    <!-- start sneaker lab -->
+    <section class="sneaker-lab">
+
+        <!-- page header -->
+        <div class="sneaker-lab-header">
+            <h1>Sneaker Lab</h1>
+            <p>Design it. Make it yours.</p>
+        </div>
+
+        <!-- lab content -->
+        <div class="lab-container">
+
+            <!-- sneaker preview -->
+            <div class="sneaker-preview">
+
+                <div class="preview-header">
+                    <span>Live Preview</span>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <div class="sneaker-image">
+                    <object
+                        id="sneaker-preview-image"
+                        data="/svg/sneaker.svg"
+                        type="image/svg+xml"
+                        aria-label="Custom sneaker preview">
+                    </object>
+                </div>
+
+                <div class="preview-info">
+
+                    <div>
+                        <span>Current Design</span>
+                        <h2 id="design-name">Classic Street</h2>
+                    </div>
+
+                    <span class="design-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Custom
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- customization panel -->
+            <div class="customization-panel">
+
+                <div class="customization-header">
+                    <h2>Customize Your Sneaker</h2>
+                    <p>Choose your style and make it unique.</p>
+                </div>
+
+                <!-- model -->
+                <div class="custom-option">
+
+                    <h3>Model</h3>
+
+                    <div class="option-buttons" data-group="model">
+                        <button type="button" class="option-btn active" data-value="sneaker">Sneaker</button>
+
+                        <button type="button" class="option-btn" data-value="Runner">Runner</button>
+
+                        <button type="button" class="option-btn" data-value="High Top">High Top</button>
+                    </div>
+
+                </div>
+
+                <!-- colors -->
+                <div class="custom-option">
+
+                    <h3>Colors</h3>
+
+                    <div class="color-options" data-group="color">
+
+                        <button type="button" class="color-swatch black active"
+                                data-value="Black" aria-label="Black" title="Black"
+                                aria-pressed="true"></button>
+
+                        <button type="button" class="color-swatch white"
+                                data-value="White" aria-label="White" title="White"
+                                aria-pressed="false"></button>
+
+                        <button type="button" class="color-swatch blue"
+                                data-value="Blue" aria-label="Blue" title="Blue"
+                                aria-pressed="false"></button>
+
+                        <button type="button" class="color-swatch red"
+                                data-value="Red" aria-label="Red" title="Red"
+                                aria-pressed="false"></button>
+
+                        <button type="button" class="color-swatch gray"
+                                data-value="Gray" aria-label="Gray" title="Gray"
+                                aria-pressed="false"></button>
+
+                    </div>
+
+                </div>
+
+                <!-- laces -->
+                <div class="custom-option">
+
+                    <h3>Laces</h3>
+
+                    <div class="option-buttons" data-group="laces">
+                        <button type="button" class="option-btn active" data-value="White">White</button>
+                        <button type="button" class="option-btn" data-value="Black">Black</button>
+                        <button type="button" class="option-btn" data-value="Blue">Blue</button>
+                    </div>
+
+                </div>
+
+                <!-- sole -->
+                <div class="custom-option">
+
+                    <h3>Sole</h3>
+
+                    <div class="option-buttons" data-group="sole">
+                        <button type="button" class="option-btn active" data-value="White">White</button>
+                        <button type="button" class="option-btn" data-value="Black">Black</button>
+                        <button type="button" class="option-btn" data-value="Blue">Blue</button>
+                    </div>
+
+                </div>
+
+                <!-- logo/details -->
+                <div class="custom-option">
+
+                    <h3>Logo / Details</h3>
+
+                    <div class="option-buttons" data-group="logo">
+                        <button type="button" class="option-btn active" data-value="Classic Logo">Classic Logo</button>
+                        <button type="button" class="option-btn" data-value="Minimal">Minimal</button>
+                        <button type="button" class="option-btn" data-value="No Logo">No Logo</button>
+                    </div>
+
+                </div>
+
+                <!-- price -->
+                <div class="design-price">
+                    <span>Design Price</span>
+                    <strong>$129</strong>
+                </div>
+
+                <!-- actions -->
+                <div class="design-actions">
+
+                    <button type="button" class="save-design">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Save Design
+                    </button>
+
+                    <button type="button" class="add-design-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end sneaker lab -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>BRANDIKO LAB</h2>
+                <p>Your style. Your way.</p>
+            </div>
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <a href="shop.html">Sneakers</a>
+                    <a href="shop.html">T-Shirts</a>
+                    <a href="shop.html">Pants</a>
+                    <a href="shop.html">Jackets</a>
+                    <a href="shop.html">Accessories</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="sneaker-lab.html">Sneaker Lab</a>
+                    <a href="community.html">Community</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+
+                    <div class="social-icons">
+                        <a href="https://instagram.com."><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com."><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com."><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Brandiko Lab. All rights reserved.</p>
+
+            <div>
+                <a href="https://policies.google.com/privacy?hl=en-US&client_theme=dark">Privacy Policy</a>
+                <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/active-nav.js"></script>
+    <script src="js/products-api.js"></script>
+    <script src="js/sneaker-lab.js"></script>
+
+</body>
+</html>
